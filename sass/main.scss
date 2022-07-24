@@ -1,0 +1,36 @@
+// Utils
+@import "./utils/variables";
+@import "./utils/modern-normalize";
+@import "./utils/visually-hidden";
+
+
+// Base
+@import "./base/common";
+@import "./base/reset";
+
+// Components
+@import "./components/header/logo";
+@import "./components/header/header";
+
+@import "./components/main/hero";
+@import "./components/main/feature";
+@import "./components/main/activity";
+@import "./components/main/team";
+@import "./components/main/regular-customers";
+
+@import "./components/footer/footer";
+@import "./components/footer/address";
+@import "./components/footer/auth-nav";
+@import "./components/footer/footer-join";
+@import "./components/footer/socials";
+@import "./components/footer/footer-subscribe-form";
+
+@import "./components/portfolio/buttons-filter";
+@import "./components/portfolio/work-examples";
+
+@import "./components/modal-window/backdrop";
+@import "./components/modal-window/modal-window";
+
+@import "./components/form-data/form-data";
+
+

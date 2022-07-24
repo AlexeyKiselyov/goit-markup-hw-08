@@ -1,0 +1,23 @@
+.footer-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-icons__item {
+  width: 44px;
+  height: 44px;
+  padding: 12px;
+
+  position: relative;
+
+  fill: var(--primary-white-color);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--transition-fast);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}

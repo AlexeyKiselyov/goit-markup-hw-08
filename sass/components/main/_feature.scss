@@ -1,0 +1,31 @@
+.feature-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-list__item {
+  width: 270px;
+}
+
+.feature-list__thumb {
+  height: 120px;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+
+  background-color: var(--bg-color-white-grey);
+}
+
+.feature-list__title {
+  margin-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.feature-list__text {
+  line-height: 1.71;
+}
