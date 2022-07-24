@@ -1,4 +1,4 @@
-# goit-markup-hw-0
+# goit-markup-hw-08
 
-ДЗ №7 (CSS Модуль№7 BEM, SASS) GoIT
+ДЗ №8 (CSS Модуль№8 Адаптивная верстка) GoIT
  
