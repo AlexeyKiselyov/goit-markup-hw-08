@@ -1,0 +1,140 @@
+.menu-btn {
+  margin-left: auto;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  border-color: transparent;
+  &.is-open {
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 100;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn__open {
+  opacity: 1;
+  .menu-btn:active & {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-btn.is-open .menu-btn__open {
+  opacity: 0;
+}
+
+.menu-btn__close {
+  opacity: 0;
+  .menu-btn:active & {
+    fill: var(--accent-color);
+  }
+}
+
+.menu-btn.is-open .menu-btn__close {
+  opacity: 1;
+}
+
+.mobile-container {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding: 48px 40px;
+
+  max-width: 480px;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 22;
+}
+
+.menu-section {
+  margin-bottom: auto;
+}
+
+.menu-section__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.menu-section__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.menu-section__link--accent {
+  color: var(--accent-color);
+}
+
+.menu-group {
+  margin-bottom: 64px;
+}
+
+.menu-group__item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+.menu-group__tel {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.menu-group__email {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.menu-socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.menu-socials__item {
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-socials__item:last-child {
+  border: none;
+}
+
+.menu-socials__link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}

@@ -36,24 +36,28 @@
   border-radius: 0px 0px 4px 4px;
 
   @media screen and (min-width: 768px) {
-    width: 354px;
+    max-width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    max-width: 270px;
   }
 }
 
 .team-list__img {
   margin-bottom: 30px;
-  max-width: 450px;
+  // max-width: 450px;
+
+  // display: block;
+  // max-width: 100%;
+  // height: auto;
 
   @media screen and (min-width: 768px) {
-    width: 354px;
+    // max-width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 270px;
+    // max-width: 270px;
   }
 }
 

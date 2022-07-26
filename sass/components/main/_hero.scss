@@ -7,21 +7,45 @@
   background-color: var(--bg-color-grey);
 
   background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)),
-    url(../images/hero.jpg);
+    url(../images/hero/hero_mob.jpg);
+  // mobile retina screen
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba(48, 49, 59, 0.4), rgba(48, 49, 59, 0.4)),
+      url(../images/hero/hero_mob@2x.jpg);
+  }
+
+  // tablet screen
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/hero_tab.jpg);
+    // tablet retina screen
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero_tab@2x.jpg);
+    }
+  }
+
+  // desktop screen
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/hero_lap.jpg);
+    // desktop retina screen
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/hero/hero_lap@2x.jpg);
+    }
+  }
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
 
   @media screen and (min-width: 480px) {
-    width: 480px;
+    max-width: 480px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1600px;
+    max-width: 1600px;
   }
 }
 
