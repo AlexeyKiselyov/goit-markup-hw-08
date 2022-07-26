@@ -13,21 +13,41 @@ h3 {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-title {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
-.container { 
-  width: 1200px;
+.container {
+  outline: 1px solid green;
+  outline-offset: -1px;
+  padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 15px;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 .list {

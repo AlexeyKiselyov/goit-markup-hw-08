@@ -1,0 +1,16 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  color: var(--primary-white-color);
+  background-color: var(--bg-color-grey);
+}
+
+.footer__container {
+  display: flex;
+}
+
+.fotter__logo {
+  color: var(--primary-white-color);
+  line-height: 1.19;
+}

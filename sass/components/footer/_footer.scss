@@ -7,10 +7,22 @@
 }
 
 .footer__container {
-  display: flex;
+  // display: flex;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    text-align: start;
+  }
 }
 
 .fotter__logo {
   color: var(--primary-white-color);
   line-height: 1.19;
+  font-size: 24px;
 }

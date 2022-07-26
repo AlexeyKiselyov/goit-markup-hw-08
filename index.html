@@ -15,10 +15,26 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <!-- Navigation -->
         <nav class="header__nav nav-header">
           <a href="/" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+          <!-- Menu button -->
+          <button
+            class="header__menu-button menu-button"
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-button__icon-close" href="./images/icons.svg#icon-close"></use>
+              <use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>ТЕКСТ</div>
+
           <ul class="nav-header__list list">
             <li class="nav-header__item">
               <a href="./index.html" class="nav-header__link nav-header__link--accent">Студия</a>
@@ -51,6 +67,7 @@
 
     <main>
       <!-- Hero -->
+
       <section class="hero section">
         <div class="hero__container container">
           <h1 class="hero__title uppercase">Эффективные решения для вашего бизнеса</h1>
@@ -59,6 +76,7 @@
       </section>
 
       <!-- Feature-->
+
       <section class="feature section">
         <div class="container">
           <h2 class="feature__title visually-hidden">Особенности</h2>
@@ -112,6 +130,7 @@
       </section>
 
       <!-- Activity -->
+
       <section class="activity section">
         <div class="container">
           <h2 class="activity__title section-title">Чем мы занимаемся</h2>
@@ -148,6 +167,7 @@
       </section>
 
       <!-- Team -->
+
       <section class="team section">
         <div class="container">
           <h2 class="team__title section-title">Наша команда</h2>
@@ -159,7 +179,7 @@
                 alt="фотография Игорь Демьяненко"
                 width="270"
               />
-              <h3 clas="team-list__name">Игорь Демьяненко</h3>
+              <h3 class="team-list__name">Игорь Демьяненко</h3>
               <p class="team-list__profession">Product Designer</p>
               <div class="social-icons">
                 <a href="" aria-label="instagram link">
@@ -195,7 +215,7 @@
                 alt="фотография Ольга Репина"
                 width="270"
               />
-              <h3 clas="team-list__name">Ольга Репина</h3>
+              <h3 class="team-list__name">Ольга Репина</h3>
               <p class="team-list__profession">Frontend Developer</p>
               <div class="social-icons">
                 <a href="" aria-label="instagram link">
@@ -231,7 +251,7 @@
                 alt="фотография Николай Тарасов"
                 width="270"
               />
-              <h3 clas="team-list__name">Николай Тарасов</h3>
+              <h3 class="team-list__name">Николай Тарасов</h3>
               <p class="team-list__profession">Marketing</p>
               <div class="social-icons">
                 <a href="" aria-label="instagram link">
@@ -267,7 +287,7 @@
                 alt="фотография Михаил Ермаков"
                 width="270"
               />
-              <h3 clas="team-list__name">Михаил Ермаков</h3>
+              <h3 class="team-list__name">Михаил Ермаков</h3>
               <p class="team-list__profession">UI Designer</p>
               <div class="social-icons">
                 <a href="" aria-label="instagram link">
@@ -299,7 +319,9 @@
           </ul>
         </div>
       </section>
+
       <!--Regular customers -->
+
       <section class="regular section">
         <div class="container">
           <h2 class="regular__title section-title">Постоянные клиенты</h2>
@@ -351,9 +373,11 @@
     </main>
 
     <!-- Footer -->
+
     <footer class="footer section">
       <div class="footer__container container">
         <!-- Address -->
+
         <div class="footer__contacts">
           <a href="index.html" class="logo fotter__logo">
             <span class="logo__accent">Web</span>Studio</a
@@ -367,7 +391,9 @@
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </address>
+
           <!-- Auth Nav -->
+
           <ul class="footer__auth-nav footer-auth-nav list">
             <li class="footer-auth-nav__item">
               <a href="mailto:info@example.com" class="footer-auth-nav__link">info@example.com</a>
@@ -377,7 +403,9 @@
             </li>
           </ul>
         </div>
+
         <!-- Footer-join -->
+
         <div class="footer__join footer-join">
           <p class="footer-join__title uppercase">Присоединяйтесь</p>
           <div class="footer-socials">
@@ -411,6 +439,7 @@
         </div>
 
         <!-- Form Footer Subscription -->
+
         <form class="footer__subscribe-form subscribe-form" autocomplete="off">
           <div class="subscribe-form__fild">
             <label class="subscribe-form__label" for="email">Подпишитесь на рассылку</label>
@@ -422,11 +451,13 @@
               placeholder="E-mail"
             />
           </div>
-          <div class="subscribe-form__button subscribe-form-button">
-            <button class="subscribe-form-button__btn" type="submit">Подписаться</button>
-            <svg class="subscribe-form-button__icon" width="24" height="24">
+          <!-- <div class="subscribe-form__button subscribe-form-button"> -->
+            <button class="subscribe-form-button__btn" type="submit">Подписаться <svg class="subscribe-form-button__icon" width="24" height="24">
               <use href="./images/icons.svg#icon-icon-send"></use>
-            </svg>
+            </svg></button>
+            <!-- <svg class="subscribe-form-button__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg> -->
           </div>
         </form>
       </div>
@@ -504,5 +535,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

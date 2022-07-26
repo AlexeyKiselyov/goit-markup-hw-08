@@ -1,0 +1,22 @@
+.footer__auth-nav {
+  margin-top: 9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-auth-nav__item:nth-child(even) {
+  margin-top: 9px;
+}
+
+.footer-auth-nav__link {
+  color: var(--footer-auth-nav-color);
+  text-decoration: none;
+  line-height: 1.7;
+
+  transition: color var(--transition-fast);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

@@ -15,10 +15,26 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header__container container">
         <!-- Navigation -->
         <nav class="header__nav nav-header">
           <a href="/" class="logo header__logo"><span class="logo__accent">Web</span>Studio</a>
+          <!-- Menu button -->
+          <button
+            class="header__menu-button menu-button"
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+            aria-controls="menu-container"
+          >
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+              <use class="menu-button__icon-close" href="./images/icons.svg#icon-close"></use>
+              <use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>ТЕКСТ</div>
+
           <ul class="nav-header__list list">
             <li class="nav-header__item">
               <a href="./index.html" class="nav-header__link ">Студия</a>
@@ -77,7 +93,7 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img src="./images/portfolio-img1.jpg" alt="Веб-сайт Технокряк" width="370" />
+                  <img  class="examples-list__img" src="./images/portfolio-img1.jpg" alt="Веб-сайт Технокряк" />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -93,10 +109,10 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img
+                  <img class="examples-list__img"
                     src="./images/portfolio-img2.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
+                    width=""
                   />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -113,7 +129,7 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img src="./images/portfolio-img3.jpg" alt="Банер Ресторан Seafood" width="370" />
+                  <img class="examples-list__img" src="./images/portfolio-img3.jpg" alt="Банер Ресторан Seafood" width="" />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -129,7 +145,7 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img src="./images/portfolio-img4.jpg" alt="Изображение наушники" width="370" />
+                  <img class="examples-list__img" src="./images/portfolio-img4.jpg" alt="Изображение наушники" width="" />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -145,7 +161,7 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img src="./images/portfolio-img5.jpg" alt="Картинка две коробки" width="370" />
+                  <img class="examples-list__img" src="./images/portfolio-img5.jpg" alt="Картинка две коробки" width="" />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -161,7 +177,7 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img src="./images/portfolio-img6.jpg" alt="Картинка Веб-сайта" width="370" />
+                  <img class="examples-list__img" src="./images/portfolio-img6.jpg" alt="Картинка Веб-сайта" width="" />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -177,10 +193,10 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img
+                  <img class="examples-list__img"
                     src="./images/portfolio-img7.jpg"
                     alt="Картинка журнал в развороте"
-                    width="370"
+                    width=""
                   />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -197,10 +213,10 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img
+                  <img class="examples-list__img"
                     src="./images/portfolio-img8.jpg"
                     alt="Картинка бирка с надписью Проект LAB"
-                    width="370"
+                    width=""
                   />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -217,10 +233,10 @@
             <li class="examples-list__item">
               <a class="examples-list__card" href="">
                 <div class="examples-list__thumb">
-                  <img
+                  <img class="examples-list__img"
                     src="./images/portfolio-img9.jpg"
                     alt="Картинка человек, работающий на компьютере"
-                    width="370"
+                    width=""
                   />
                   <p class="examples-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -240,7 +256,7 @@
       </section>
     </main>
     <!-- Footer -->
-   <footer class="footer section">
+    <footer class="footer section">
       <div class="footer__container container">
         <!-- Address -->
         <div class="footer__contacts">
@@ -320,5 +336,6 @@
         </form>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,15 @@
 .footer__join {
-  margin-top: 12px;
+  // margin-top: 12px;
+  margin-top: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 12px;
+  }
 }
 
 .footer-join__title {

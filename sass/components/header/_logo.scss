@@ -4,6 +4,7 @@
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  letter-spacing: 0.03em;
 }
 
 .logo__accent {
@@ -11,7 +12,23 @@
 }
 
 .header__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  // padding-top: 24px;
+  // padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
   color: var(--secondary-black-color);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }

@@ -1,11 +1,14 @@
 .footer__auth-nav {
-  margin-top: 9px;
+  // margin-top: 9px;
   display: flex;
   flex-direction: column;
+
+  margin-top: 8px;
 }
 
 .footer-auth-nav__item:nth-child(even) {
-  margin-top: 9px;
+  // margin-top: 9px;
+  margin-top: 8px;
 }
 
 .footer-auth-nav__link {

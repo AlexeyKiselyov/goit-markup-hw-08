@@ -1,0 +1,33 @@
+.regular__title {
+  margin-bottom: 50px;
+}
+
+.regular-list {
+  display: flex;
+  align-content: center;
+  gap: 30px;
+}
+
+.regular-list__item {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+
+  position: relative;
+
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: fill var(--transition-fast), border-color var(--transition-fast);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}
+
+
+.regular-list__icon {
+  fill: inherit;
+}

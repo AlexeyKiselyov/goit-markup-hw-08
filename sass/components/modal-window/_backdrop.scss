@@ -11,6 +11,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: initial;
+  overflow-y: scroll;
 
   transition: opacity 400ms ease-in, visibility 400ms ease-in;
 }
