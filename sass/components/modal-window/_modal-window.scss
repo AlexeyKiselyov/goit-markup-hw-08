@@ -36,10 +36,11 @@
   transform: translate(-8px, 8px);
 }
 
-.modal__btn:focus .modal__icon {
-  fill: var(--accent-color);
-}
-
 .modal__icon {
   transition: fill var(--transition-fast);
+
+  .modal__btn:hover &,
+  .modal__btn:focus & {
+    fill: var(--accent-color);
+  }
 }

@@ -70,10 +70,10 @@
 
         <ul class="nav-header__list list">
           <li class="nav-header__item">
-            <a href="./index.html" class="nav-header__link nav-header__link--accent">Студия</a>
+            <a href="./index.html" class="nav-header__link">Студия</a>
           </li>
           <li class="nav-header__item">
-            <a href="./portfolio.html" class="nav-header__link">Портфолио</a>
+            <a href="./portfolio.html" class="nav-header__link nav-header__link--accent">Портфолио</a>
           </li>
           <li class="nav-header__item">
             <a href="" class="nav-header__link">Контакты</a>
@@ -434,9 +434,10 @@
     </section>
   </main>
   <!-- Footer -->
-  <footer class="footer section">
+ <footer class="footer section">
     <div class="footer__container container">
       <!-- Address -->
+
       <div class="footer__contacts">
         <a href="index.html" class="logo fotter__logo">
           <span class="logo__accent">Web</span>Studio</a>
@@ -444,7 +445,9 @@
           <a class="footer-addres__location" href="https://goo.gl/maps/piqngm7oDQpEDh6u6" target="_blank"
             rel="noopener nofollow noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
         </address>
+
         <!-- Auth Nav -->
+
         <ul class="footer__auth-nav footer-auth-nav list">
           <li class="footer-auth-nav__item">
             <a href="mailto:info@example.com" class="footer-auth-nav__link">info@example.com</a>
@@ -454,7 +457,9 @@
           </li>
         </ul>
       </div>
+
       <!-- Footer-join -->
+
       <div class="footer__join footer-join">
         <p class="footer-join__title uppercase">Присоединяйтесь</p>
         <div class="footer-socials">
@@ -492,18 +497,22 @@
       </div>
 
       <!-- Form Footer Subscription -->
+
       <form class="footer__subscribe-form subscribe-form" autocomplete="off">
         <div class="subscribe-form__fild">
           <label class="subscribe-form__label" for="email">Подпишитесь на рассылку</label>
           <input class="subscribe-form__input" type="email" name="email" id="email" placeholder="E-mail" />
         </div>
-        <div class="subscribe-form__button subscribe-form-button">
-          <button class="subscribe-form-button__btn" type="submit">Подписаться</button>
-          <svg class="subscribe-form-button__icon" width="24" height="24">
+        <!-- <div class="subscribe-form__button subscribe-form-button"> -->
+        <button class="subscribe-form-button__btn" type="submit">Подписаться <svg class="subscribe-form-button__icon"
+            width="24" height="24">
             <use href="./images/icons.svg#icon-icon-send"></use>
-          </svg>
-        </div>
-      </form>
+          </svg></button>
+        <!-- <svg class="subscribe-form-button__icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-icon-send"></use>
+            </svg> -->
+    </div>
+    </form>
     </div>
   </footer>
   <script src="./js/menu.js"></script>

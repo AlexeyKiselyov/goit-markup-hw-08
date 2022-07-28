@@ -294,6 +294,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -310,6 +313,12 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section-title {
   font-size: 28px;
@@ -323,8 +332,6 @@ img {
 }
 
 .container {
-  outline: 1px solid green;
-  outline-offset: -1px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -1290,6 +1297,13 @@ address {
 }
 
 .examples-list__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
 }
 
@@ -1343,6 +1357,9 @@ address {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 4px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
@@ -1422,13 +1439,12 @@ address {
           transform: translate(-8px, 8px);
 }
 
-.modal__btn:focus .modal__icon {
-  fill: var(--accent-color);
-}
-
 .modal__icon {
   -webkit-transition: fill var(--transition-fast);
   transition: fill var(--transition-fast);
+}
+.modal__btn:hover .modal__icon, .modal__btn:focus .modal__icon {
+  fill: var(--accent-color);
 }
 
 .form-data {
@@ -1684,6 +1700,11 @@ address {
   background-color: #ffffff;
   z-index: 22;
 }
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 
 .menu-section {
   margin-bottom: auto;
@@ -1700,6 +1721,9 @@ address {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.menu-section__link:hover {
+  color: var(--accent-color);
 }
 
 .menu-section__link--accent {
@@ -1730,6 +1754,9 @@ address {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+}
+.menu-group__email:hover {
+  color: var(--accent-color);
 }
 
 .menu-socials {

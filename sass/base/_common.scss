@@ -4,6 +4,10 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 h1,
@@ -22,6 +26,11 @@ img {
   // padding-bottom: 94px;
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -35,8 +44,8 @@ img {
 }
 
 .container {
-  outline: 1px solid green;
-  outline-offset: -1px;
+  // outline: 1px solid green;
+  // outline-offset: -1px;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;

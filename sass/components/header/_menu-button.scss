@@ -57,6 +57,10 @@
   height: 100%;
   background-color: #ffffff;
   z-index: 22;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-section {
@@ -68,14 +72,18 @@
     margin-bottom: 32px;
   }
 }
+
 .menu-section__link {
   text-decoration: none;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-
   color: #212121;
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .menu-section__link--accent {
@@ -108,6 +116,10 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
+
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .menu-socials {
